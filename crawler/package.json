@@ -11,6 +11,8 @@
     "mysql": "*",
     "connect": "*",
     "lodash": "*",
+    "js-yaml": "*",
+    "config": "*",
     "sequelize": "*"
   }
 }

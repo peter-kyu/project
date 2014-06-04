@@ -1,6 +1,7 @@
-* space for peter kim's projects
+# space for peter kim's projects
 
-* contents
-** crawler
- crawler for web page with ajax contents
+# contents
+## crawler
+----
+   crawler for web page with ajax contents
 

@@ -6,12 +6,13 @@ var express = require('express'),
     connect = require('connect'),
     http    = require('http'),
     path    = require('path'),
+    config  = require('config'),
     db      = require('./models');
 //var mysql = require('mysql');
 var app     = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', config.http.port || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(connect.favicon());

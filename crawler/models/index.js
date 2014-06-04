@@ -5,9 +5,13 @@ var fs = require('fs'),
     path = require('path'),
     Sequelize = require('sequelize'),
     lodash = require('lodash'),
-    sequelize = new Sequelize('crawler', 'root', 'dkanehTmwlak', {
-        dialect: 'mysql',
-        port: 3306
+    config = require('config');
+var sequelize = new Sequelize(config.database.default_schema,
+        config.database.username,
+        config.database.password, {
+    //sequelize = new Sequelize('crawler', 'root', 'dkanehTmwlak', {
+        dialect: config.database.type,
+        port: config.database.port
     }),
     db = {};
 
